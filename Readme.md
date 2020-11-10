@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Настя Степанникова](https://up.htmlacademy.ru/adaptive/21/user/499465).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Тюлихова`.
 
 ---
 
