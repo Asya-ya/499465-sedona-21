@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
+    <a href="index.html" class="page-header__logo">
       <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седоны">
     </a>
 
@@ -25,7 +25,7 @@
             <a href="catalog.html">Фото и видео</a>
           </li>
 
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a>Форма отзыва</a>
           </li>
 
@@ -38,7 +38,6 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Форма отзыва</h1>
 
     <div class="form-intro wrapper">
         <img class="form-intro__text" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
@@ -47,7 +46,7 @@
     <section class="review">
       <div class="wrapper">
         <header class="review__header">
-          <h2 class="review__title">Оставьте свой отзыв</h2>
+          <h1 class="review__title">Оставьте свой отзыв</h1>
 
           <p class="review__header-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
@@ -89,51 +88,44 @@
           <fieldset class="form__rating">
             <legend class="form__legend">Ваше общее впечатление:</legend>
 
-            <label class="form__value">
-              <span class="form__radio-indicator"></span>
-              <input class="form__radio" type="radio" name="rating" value="positive" checked>
-              Скорее положительное
-            </label>
+            <p class="form__value">
+              <input class="form__radio visually-hidden" id="rating-1" type="radio" name="rating" value="positive" checked>
+              <label for="rating-1">Скорее положительное</label>
+            </p>
 
-            <label class="form__value">
-              <span class="form__radio-indicator"></span>
-              <input class="form__radio" type="radio" name="rating" value="negative">
-              Скорее отрицательное
-            </label>
+            <p class="form__value">
+              <input class="form__radio visually-hidden" id="rating-2" type="radio" name="rating" value="negative">
+              <label for="rating-2">Скорее отрицательное</label>
+            </p>
 
-            <label class="form__value">
-              <span class="form__radio-indicator"></span>
-              <input class="form__radio" type="radio" name="rating" value="doubt">
-              Затрудняюсь ответить
-            </label>
+            <p class="form__value">
+              <input class="form__radio visually-hidden" id="rating-3" type="radio" name="rating" value="doubt">
+              <label for="rating-3">Затрудняюсь ответить</label>
+            </p>
           </fieldset>
 
           <fieldset class="form__attractions">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
 
-            <label class="form__value">
-              <span class="form__check-indicator"></span>
-              <input class="form__check" type="checkbox" name="attraction" value="bridge-of-devil" checked>
-              Мост Дьявола
-            </label>
+            <p class="form__value">
+              <input class="form__check" id="attracrion-1" type="checkbox" name="attraction" value="bridge-of-devil" checked>
+              <label for="attracrion-1">Мост Дьявола</label>
+            </p>
 
-            <label class="form__value">
-              <span class="form__check-indicator"></span>
-              <input class="form__check" type="checkbox" name="attraction" value="mount-bell" checked>
-              Гора-Колокол
-            </label>
+            <p class="form__value">
+              <input class="form__check" id="attracrion-2" type="checkbox" name="attraction" value="mount-bell" checked>
+              <label for="attracrion-2">Гора-Колокол</label>
+            </p>
 
-            <label class="form__value">
-              <span class="form__check-indicator"></span>
-              <input class="form__check" type="checkbox" name="attraction" value="slide-park" checked>
-              Слайд-парк
-            </label>
+            <p class="form__value">
+              <input class="form__check" id="attracrion-3" type="checkbox" name="attraction" value="slide-park" checked>
+              <label for="attracrion-3">Слайд-парк</label>
+            </p>
 
-            <label class="form__value">
-              <span class="form__check-indicator"></span>
-              <input class="form__check" type="checkbox" name="attraction" value="red-rocks">
-              Красные скалы
-            </label>
+            <p class="form__value">
+              <input class="form__check" id="attracrion-4" type="checkbox" name="attraction" value="red-rocks">
+              <label for="attracrion-4">Красные скалы</label>
+            </p>
           </fieldset>
 
           <fieldset class="form__text">
