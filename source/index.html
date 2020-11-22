@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Седона</title>
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седоны">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
 
       <nav class="main-nav">
@@ -18,19 +19,19 @@
         <div class="wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
 
             <li class="main-nav__item">
-              <a href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
 
             <li class="main-nav__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
 
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -44,7 +45,7 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Добро пожаловать в великолепную Седону, потому что большой каньон - отстой</h2>
 
-          <img class="intro__text" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что большой каньон - отстой">
+          <img class="intro__text" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что большой каньон - отстой">
         </div>
       </section>
 
@@ -59,13 +60,13 @@
 
           <ul class="reasons__list">
             <li class="reasons__item">
-              <h3 class="reasons__title">Настоящий городок</h3>
+              <h3 class="reasons__name">Настоящий городок</h3>
 
               <p class="reasons__number">№1</p>
 
               <p class="reasons__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 
-              <img class="reasons__image" src="https://via.placeholder.com/520x260" width="520" height="260" alt="Фото города Седона">
+              <img class="reasons__image" src="img/reason-1.jpg" width="800" height="256" alt="Фото города Седона">
 
               <ul class="reasons__wish wish">
                 <li class="wish__item wish__item--house">
@@ -95,33 +96,33 @@
             </li>
 
             <li class="reasons__item">
-              <h3 class="reasons__title">Там есть мост дьявола</h3>
+              <h3 class="reasons__name">Там есть мост дьявола</h3>
 
               <p class="reasons__number">№2</p>
 
               <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
 
-              <img class="reasons__image" src="https://via.placeholder.com/520x260" width="520" height="260" alt="Фото моста дьявола">
+              <img class="reasons__image" src="img/reason-2.jpg" width="800" height="256" alt="Фото моста дьявола">
             </li>
 
-            <li class="reasons__item">
-              <h3 class="reasons__title">Небольшая площадь</h3>
+            <li class="reasons__item reasons__item--light">
+              <h3 class="reasons__name">Небольшая площадь</h3>
 
               <p class="reasons__number">№3</p>
 
               <p class="reasons__text">ВСЕ интересные места находятся очень близко</p>
             </li>
 
-            <li class="reasons__item">
-              <h3 class="reasons__title">Красивая дорога</h3>
+            <li class="reasons__item reasons__item--light">
+              <h3 class="reasons__name">Красивая дорога</h3>
 
               <p class="reasons__number">№4</p>
 
               <p class="reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </li>
 
-            <li class="reasons__item">
-              <h3 class="reasons__title">Мало туристов</h3>
+            <li class="reasons__item reasons__item--light">
+              <h3 class="reasons__name">Мало туристов</h3>
 
               <p class="reasons__number">№5</p>
 
@@ -135,10 +136,9 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Бронирование гостиницы</h2>
 
-          <p class="booking__text">
-            <b class="booking__intro">Заинтересовались?</b>
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-          </p>
+          <p class="booking__intro">Заинтересовались?</p>
+
+          <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
           <a class="button booking__search" href="#">Найти гостиницу</a>
         </div>
@@ -148,14 +148,14 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Карта проезда</h2>
 
-          <img class="map__image" src="https://via.placeholder.com/320x350" width="320" height="350" alt="Карта проезда к городу Седона">
+          <img class="map__image" src="img/map.jpg" width="1200" height="350" alt="Карта проезда к городу Седона">
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="wrapper">
-        <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
+        <p class="page-footer__hashtag">#visitSEDONA</p>
 
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -188,6 +188,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/live.js"></script>
   </body>
 </html>
