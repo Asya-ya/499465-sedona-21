@@ -1,0 +1,59 @@
+.form__fieldset {
+  border: 0;
+}
+
+.form__legend {
+  padding: 20px 0;
+
+  .title();
+  text-align: center;
+}
+
+.form__label {
+  display: inline-block;
+}
+
+.form__fieldset--name .form__label {
+  padding-bottom: 20px;
+}
+
+.form__input {
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+
+  background-color: #f2f2f2;
+  border: 0;
+
+  &::placeholder {
+    .title();
+    text-transform: none;
+  }
+
+  &--text {
+    min-height: 160px;
+    margin-bottom: 50px;
+  }
+}
+
+.form__fieldset--contacts .form__input {
+  padding-right: 58px;
+}
+
+.form__value {
+  .title();
+  text-transform: none;
+}
+
+.form__submit {
+  padding: 18px 32px 14px 32px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  .big-title();
+}
+
+.form__required-text {
+  display: none;
+  text-align: right;
+}
