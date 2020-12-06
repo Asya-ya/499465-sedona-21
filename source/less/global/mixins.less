@@ -4,3 +4,25 @@
 
   list-style: none;
 }
+
+.title() {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.big-title() {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.simple-text(@line-height: 21px; @weight: 400) {
+  font-weight: @weight;
+  font-size: 14px;
+  line-height: @line-height;
+  text-transform: uppercase;
+}
