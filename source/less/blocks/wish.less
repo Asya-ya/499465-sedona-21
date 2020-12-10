@@ -4,10 +4,27 @@
   text-align: left;
 
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .wish__item {
   padding-bottom: 26px;
+}
+
+.wish__item--food {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
+.wish__item--souvenirs {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .wish__title {

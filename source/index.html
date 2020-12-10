@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Седона</title>
   </head>
@@ -17,7 +18,7 @@
         </button>
 
         <div class="wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--big">
             <li class="main-nav__item">
               <a class="main-nav__link">Главная</a>
             </li>
@@ -60,13 +61,18 @@
 
           <ul class="reasons__list">
             <li class="reasons__item">
-              <h3 class="reasons__name">Настоящий городок</h3>
+              <div class="reasons__first-wrapper">
+                <div class="reasons__about">
+                  <h3 class="reasons__name">Настоящий городок</h3>
 
-              <p class="reasons__number">№1</p>
+                  <p class="reasons__number">№1</p>
 
-              <p class="reasons__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                  <p class="reasons__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                </div>
 
-              <img class="reasons__image" src="img/reason-1.jpg" width="800" height="256" alt="Фото города Седона">
+                <!-- <img class="reasons__image" src="img/reason-1.jpg" width="320" height="260" alt="Фото города Седона"> -->
+                <div class="reasons__image"></div>
+              </div>
 
               <ul class="reasons__wish wish">
                 <li class="wish__item wish__item--house">
@@ -96,37 +102,46 @@
             </li>
 
             <li class="reasons__item">
-              <h3 class="reasons__name">Там есть мост дьявола</h3>
+              <div class="reasons__second-wrapper">
+                <div class="reasons__about">
+                  <h3 class="reasons__name">Там есть мост дьявола</h3>
 
-              <p class="reasons__number">№2</p>
+                  <p class="reasons__number">№2</p>
 
-              <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
 
-              <img class="reasons__image" src="img/reason-2.jpg" width="800" height="256" alt="Фото моста дьявола">
+                <!-- <img class="reasons__image" src="img/reason-2.jpg" width="320" height="260" alt="Фото моста дьявола"> -->
+                <div class="reasons__image"></div>
+              </div>
             </li>
 
             <li class="reasons__item reasons__item--light">
-              <h3 class="reasons__name">Небольшая площадь</h3>
+              <ul class="reasons__third-wrapper">
+                <li>
+                  <h3 class="reasons__name">Небольшая площадь</h3>
 
-              <p class="reasons__number">№3</p>
+                  <p class="reasons__number">№3</p>
 
-              <p class="reasons__text">ВСЕ интересные места находятся очень близко</p>
-            </li>
+                  <p class="reasons__text">ВСЕ интересные места находятся очень близко</p>
+                </li>
 
-            <li class="reasons__item reasons__item--light">
-              <h3 class="reasons__name">Красивая дорога</h3>
+                <li>
+                  <h3 class="reasons__name">Красивая дорога</h3>
 
-              <p class="reasons__number">№4</p>
+                  <p class="reasons__number">№4</p>
 
-              <p class="reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-            </li>
+                  <p class="reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                </li>
 
-            <li class="reasons__item reasons__item--light">
-              <h3 class="reasons__name">Мало туристов</h3>
+                <li>
+                  <h3 class="reasons__name">Мало туристов</h3>
 
-              <p class="reasons__number">№5</p>
+                  <p class="reasons__number">№5</p>
 
-              <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
+                  <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -148,7 +163,7 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Карта проезда</h2>
 
-          <img class="map__image" src="img/map.jpg" width="1200" height="350" alt="Карта проезда к городу Седона">
+          <img class="map__image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта проезда к городу Седона">
         </div>
       </section>
     </main>
