@@ -9,32 +9,34 @@
   <body class="page__body">
     <div class="wrapper">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
-        </a>
+        <div class="main-nav__mobile">
+          <a class="page-header__logo">
+            <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          </a>
+        </div>
 
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
-            <ul class="main-nav__list main-nav__list--big">
-              <li class="main-nav__item">
-                <a class="main-nav__link">Главная</a>
-              </li>
+          <ul class="main-nav__list main-nav__list--nojs">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
 
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-              </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
 
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
-              </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
 
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-              </li>
-            </ul>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -66,8 +68,9 @@
                     <p class="reasons__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
                   </div>
 
-                  <!-- <img class="reasons__image" src="img/reason-1.jpg" width="320" height="260" alt="Фото города Седона"> -->
-                  <div class="reasons__image"></div>
+                  <div class="reasons__image-wrapper">
+                    <img class="reasons__image" src="img/reason-1.jpg" width="512" height="256" alt="Фото города Седона">
+                  </div>
                 </div>
 
                 <ul class="reasons__wish wish">
@@ -107,8 +110,9 @@
                     <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
 
-                  <!-- <img class="reasons__image" src="img/reason-2.jpg" width="320" height="260" alt="Фото моста дьявола"> -->
-                  <div class="reasons__image"></div>
+                  <div class="reasons__image-wrapper">
+                    <img class="reasons__image" src="img/reason-2.jpg" width="512" height="256" alt="Фото моста дьявола">
+                  </div>
                 </div>
               </li>
 
@@ -155,7 +159,9 @@
         <section class="map">
             <h2 class="visually-hidden">Карта проезда</h2>
 
-            <img class="map__image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта проезда к городу Седона">
+            <div class="map__image-wrapper">
+               <img class="map__image" src="img/map.jpg" width="1220" height="350" alt="Карта проезда к городу Седона">
+            </div>
         </section>
       </main>
 
