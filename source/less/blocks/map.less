@@ -1,3 +1,25 @@
 .map {
   padding-bottom: 10px;
+
+  text-align: center;
+}
+
+.map__image-wrapper {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.map__image {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    left: 50%;
+    margin-left: -1220px /2;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    margin-left: -1220px /2;
+  }
 }
