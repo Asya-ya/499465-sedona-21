@@ -1,7 +1,28 @@
 .form-intro {
+  width: 100%;
   min-height: 158px;
+  padding-top: 52px;
+  box-sizing: border-box;
 
+  text-align: center;
+
+  background-color: @blue;
   background-image: url("../img/back-form.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    padding-top: 95px;
+  }
+}
+
+.form-intro__text {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
 }

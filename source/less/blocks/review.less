@@ -1,5 +1,13 @@
 .review {
-  padding-bottom: 48px;
+  padding: 0 20px 48px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px 48px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px 48px 120px;
+  }
 }
 
 .review__title {
@@ -9,12 +17,31 @@
 
   .title();
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+
+    font-size: 30px;
+  }
 }
 
 .review__header-text {
   padding-bottom: 16px;
-  margin: 0;
+  margin: 0 auto;
 
   .simple-text(24px);
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 60px;
+
+    width: 435px;
+  }
+}
+
+.review__form {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
