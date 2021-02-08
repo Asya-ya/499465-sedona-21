@@ -1,6 +1,12 @@
 .video {
   padding-top: 32px;
   padding-bottom: 49px;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 60px 0 60px;
+  }
 }
 
 .video__intro {
@@ -8,13 +14,22 @@
   padding-bottom: 28px;
 
   .title();
-  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__text {
+  display: inline-block;
+
   padding-bottom: 33px;
   margin: 0;
 
   .simple-text(24px);
-  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 85px;
+    width: 445px;
+  }
 }

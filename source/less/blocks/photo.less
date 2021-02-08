@@ -1,22 +1,86 @@
+.photo {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+}
+
+.photo__header {
+  text-align: center;
+}
+
 .photo__title {
   padding-top: 24px;
   padding-bottom: 27px;
   margin: 0;
 
   .title();
-  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 64px;
+
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 102px;
+  }
 }
 
 .photo__text {
+  display: inline-block;
   padding-bottom: 40px;
   margin: 0;
 
   .simple-text(24px);
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }
 
 .photo__list {
   .list-reset();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding-top: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding-top: 79px;
+  }
+}
+
+.photo__item {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.photo__item:first-child {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+.photo__item:nth-child(2n+3) .photo__about {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
 .photo__content {
@@ -24,6 +88,10 @@
   margin: 0;
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .photo__img {
@@ -33,6 +101,25 @@
 .photo__about {
   padding-top: 11px;
   padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 22px 20px 15px 20px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 7px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @text-light;
+  }
 }
 
 .photo__name {
@@ -49,7 +136,12 @@
 }
 
 .photo__likes {
+  padding-left: 37px;
   margin: 0;
 
   .simple-text(24px, 700);
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
 }
