@@ -1,5 +1,5 @@
 .booking {
-  padding-bottom: 49px;
+  padding: 0 20px 49px 20px;
 
   text-transform: uppercase;
   text-align: center;
@@ -30,4 +30,12 @@
   .big-title();
 
   box-sizing: border-box;
+
+  &:not(.button--disabled):hover {
+    .button-hover();
+  }
+
+  &:not(.button--disabled):active {
+    .button-active();
+  }
 }
